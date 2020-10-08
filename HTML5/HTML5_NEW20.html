@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5_NEW20.html</title>
+</head>
+<body>
+    <fieldset>
+        <legend>HTML5에 새롭게 추가된 태그나 속성들</legend>
+        <h2>텍스트에 하이라이트 효과를 주는 태그(mark)</h2>
+        <p>         
+            <mark>독감</mark>은 이르면 10월부터 유행한다. </br>
+            <mark>코로나</mark> 대유행과 맞물릴 경우 보건 체계와 신체에 상당한 타격을 줄 수 있다고 CNN은 전했다.</br>
+             안드리안 버로스 가정의학과 전문의는 </br>
+            "확실히 감기와 <mark>코로나</mark>에 동시에 감염될 수 있다"면서</br>
+            "이는 인체의 면역 체계에 <span style = "background-color: red;">치명적</span>일 수 있다"고 말했다. </br>
+        </p>
+
+        <h2>진행을 표시하는 태그(progress)</h2>
+        <progress value="80" max="200" style="width:300px; height:30px"></progress>
+
+        <h2>자동완성 태그(datalist)</h2>
+        <label for='keyword'>검색어를 입력하세요</label>
+        <input type="search" id ="keyword" list="data_list"/>
+        <datalist id="data_list">
+            <option value="코로나"></option>
+            <option value="코로나19"></option>
+            <option value="코카콜라"></option>
+            <option value="코알라"></option>
+            <option value="HTML5"></option>
+            <option value="Hybrid"></option>
+            <option value="NAVER"></option>
+            <option value="NATE"></option>
+        </datalist>
+
+        <h2>이미지를 그룹화 하는 태그(figure)</h2>
+        <figure>
+            <figcaption>자바 이미지1</figcaption>
+            <img src="../images/javalogo.jpg" alt="첫번째 이미지" width="100" height="50"/>
+        </figure>
+        <figure>
+            <figcaption>자바 이미지2</figcaption>
+            <img src="../images/javalogo.jpg" alt="두번째 이미지" width="100" height="50"/>
+        </figure>
+
+        <h2>새롭게 추가된 속성들</h2>
+        <h3>multiple,accept속성</h3>
+        <input type="file" multiple accept="image/png,image/jpeg"/>
+
+        <h3>autofocus속성</h3>
+        <input type="text" autofocus/>
+
+        <h3>contenteditable속성</h3>
+        <p contenteditable="true">         
+            <mark>독감</mark>은 이르면 10월부터 유행한다. </br>
+            <mark>코로나</mark> 대유행과 맞물릴 경우 보건 체계와 신체에 상당한 타격을 줄 수 있다고 CNN은 전했다.</br>
+             안드리안 버로스 가정의학과 전문의는 </br>
+            "확실히 감기와 <mark>코로나</mark>에 동시에 감염될 수 있다"면서</br>
+            "이는 인체의 면역 체계에 <span style = "background-color: red;">치명적</span>일 수 있다"고 말했다. </br>
+        </p>
+
+        <h3>hidden속성</h3>
+        <input type="button" value="버튼" hidden/>
+
+        <h3>required속성</h3>
+        <form action="https://www.nate.com">
+            <input type="text" name="name" required/>
+            남자<input type="radio" name="gender" value="남자" required/>
+            여자<input type="radio" name="gender" value="여자" required/>
+            동의<input type="checkbox" name="accept" value="YES" required/>
+            <input type="submit" value="확인"/>
+        </form>
+
+        <h3>placeholder속성</h3>
+        아이디 <input type="text" placeholder="아이디"/>
+        비밀번호 <input type="password" placeholder="비밀번호"/>
+        
+
+    </fieldset>
+</body>
+</html>
